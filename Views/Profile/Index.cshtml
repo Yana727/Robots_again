@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="row">
+    <figure>
+        <img src="@Model.Avatar">
+    </figure>
+        <div class="contact">
+          <h1>@Model.Name</h1>
+          <p>
+         @Model.Address["city"], 
+         <br>
+         @Model.Address["state_or_province"]
+         <br>
+         @Model.Email
+         
+       
+          </p>
+        </div>
+
+
